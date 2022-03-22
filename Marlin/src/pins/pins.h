@@ -870,6 +870,11 @@
 
 #endif
 
+#if ENABLED(ZONESTAR_LCD)
+ 
+  #define ADC_KEYPAD_PIN 4 
+#endif // ZONESTAR_LCD
+
 //
 // Post-process pins according to configured settings
 //

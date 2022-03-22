@@ -45,6 +45,9 @@
   #define PGMSTR(NAM,STR) const char NAM[] = STR
 #endif
 
+#define ADC_MEDIAN_FILTER_SIZE (5)
+#define ADC_LOWPASS_K_VALUE (2)
+
 inline void watchdog_refresh() {
   TERN_(USE_WATCHDOG, HAL_watchdog_refresh());
 }
